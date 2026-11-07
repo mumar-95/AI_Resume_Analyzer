@@ -1,0 +1,59 @@
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F7FAF9"
+secondaryBackgroundColor = "#EAF4F1"
+codeBackgroundColor = "#E4EFEC"
+textColor = "#12352F"
+linkColor = "#0F766E"
+borderColor = "#C5D9D3"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "0.6rem"
+buttonRadius = "0.6rem"
+baseFontSize = 15
+baseFontWeight = 400
+headingFontSizes = ["2rem", "1.5rem", "1.2rem", "1.05rem", "0.95rem", "0.85rem"]
+headingFontWeights = [650, 650, 600, 600, 600, 600]
+linkUnderline = false
+font = "DM Sans:https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+headingFont = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+codeFont = "IBM Plex Mono:https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+codeFontSize = "0.875rem"
+codeTextColor = "#134E4A"
+blueColor = "#0284C7"
+greenColor = "#059669"
+redColor = "#DC2626"
+yellowColor = "#CA8A04"
+orangeColor = "#EA580C"
+violetColor = "#7C3AED"
+grayColor = "#64748B"
+chartCategoricalColors = ["#0F766E", "#0284C7", "#CA8A04", "#EA580C", "#059669", "#475569"]
+dataframeBorderColor = "#C5D9D3"
+dataframeHeaderBackgroundColor = "#EAF4F1"
+paddingTop = "1.4rem"
+paddingBottom = "2.5rem"
+metricValueFontSize = "1.75rem"
+metricValueFontWeight = 650
+
+[theme.sidebar]
+backgroundColor = "#0B2421"
+secondaryBackgroundColor = "#133531"
+codeBackgroundColor = "#1A403B"
+textColor = "#ECFDF5"
+borderColor = "#1F4A44"
+primaryColor = "#2DD4BF"
+linkColor = "#5EEAD4"
+dataframeHeaderBackgroundColor = "#133531"
+dataframeBorderColor = "#1F4A44"
+paddingTop = "1rem"
+
+[server]
+port = 8501
+address = "localhost"
+headless = false
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
