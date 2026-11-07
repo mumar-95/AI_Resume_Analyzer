@@ -40,11 +40,36 @@ class Settings:
         return [name for name, value in required.items() if not value]
 
 
+def _from_streamlit_secrets(name: str) -> str:
+    """Read flat secrets from Streamlit Cloud / local secrets.toml."""
+    try:
+        import streamlit as st
+
+        secrets = st.secrets
+    except Exception:
+        return ""
+
+    try:
+        value = secrets.get(name)  # type: ignore[attr-defined]
+    except Exception:
+        try:
+            value = secrets[name]
+        except Exception:
+            return ""
+
+    if value is None:
+        return ""
+    return str(value).strip()
+
+
 def _first_env(*names: str) -> str:
     for name in names:
         value = os.getenv(name, "").strip()
         if value:
             return value
+        secret = _from_streamlit_secrets(name)
+        if secret:
+            return secret
     return ""
 
 

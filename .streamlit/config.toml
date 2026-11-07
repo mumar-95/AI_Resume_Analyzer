@@ -14,7 +14,7 @@ buttonRadius = "0.6rem"
 baseFontSize = 15
 baseFontWeight = 400
 headingFontSizes = ["2rem", "1.5rem", "1.2rem", "1.05rem", "0.95rem", "0.85rem"]
-headingFontWeights = [650, 650, 600, 600, 600, 600]
+headingFontWeights = [600, 600, 600, 600, 600, 600]
 linkUnderline = false
 font = "DM Sans:https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
 headingFont = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
@@ -34,7 +34,7 @@ dataframeHeaderBackgroundColor = "#EAF4F1"
 paddingTop = "1.4rem"
 paddingBottom = "2.5rem"
 metricValueFontSize = "1.75rem"
-metricValueFontWeight = 650
+metricValueFontWeight = 600
 
 [theme.sidebar]
 backgroundColor = "#0B2421"
@@ -48,12 +48,9 @@ dataframeHeaderBackgroundColor = "#133531"
 dataframeBorderColor = "#1F4A44"
 paddingTop = "1rem"
 
+# Cloud-safe: do not pin address/port (Streamlit Cloud manages those).
 [server]
-port = 8501
-address = "localhost"
-headless = false
+headless = true
 
 [browser]
 gatherUsageStats = false
-serverAddress = "localhost"
-serverPort = 8501
